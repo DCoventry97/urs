@@ -1,5 +1,5 @@
 import unittest
-from main import check_input
+from check_input import check_input
 
 
 class TestCheckInput(unittest.TestCase):
@@ -39,3 +39,11 @@ class TestCheckInput(unittest.TestCase):
     def test_delete_flag(self):
         args_list = ["./main.py", "--delete", "A"]
         self.assertEqual(check_input(args_list), 4)
+
+    def test_valid_shortened_url(self):
+        args_list = ["./main.py", "valid_url"]
+        self.assertEqual(check_input(args_list), 0)
+
+    def test_invalid_shortened_url(self):
+        args_list = ["./main.py", "invalid_url"]
+        self.assertEqual(check_input(args_list), -1)
