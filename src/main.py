@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 import sys
-import shortened_url, check_input
+from check_input import check_input
 
-print(sys.argv)
+check_input(sys.argv)
+
 
 
 
