@@ -1,6 +1,7 @@
 import unittest
 from main import check_input
 
+
 class TestCheckInput(unittest.TestCase):
 
     def test_n_flag(self):
