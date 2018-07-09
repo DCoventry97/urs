@@ -3,11 +3,13 @@ import sys
 import xml.etree.ElementTree as ET
 from check_input import check_input
 
-tree = ET.parse("urls.xml")
+tree = ET.parse("../urls.xml")
 root = tree.getroot()
 
-check_input(sys.argv, root)
+decision = check_input(sys.argv, root)
 
+if decision == -1:
+    print("Invalid input, use ")
 
 
 
