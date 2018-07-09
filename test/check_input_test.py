@@ -44,7 +44,7 @@ class TestCheckInput(unittest.TestCase):
         self.assertEqual(check_input(args_list, root), 4)
 
     def test_valid_shortened_url(self):
-        args_list = ["./main.py", "valid_url"]
+        args_list = ["./main.py", "g"]
         self.assertEqual(check_input(args_list, root), 0)
 
     def test_invalid_shortened_url(self):
