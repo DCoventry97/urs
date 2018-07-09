@@ -11,6 +11,7 @@ def main():
     decision = check_input(sys.argv, root)
     if decision == -1:
         print("Invalid Arguments Given: use help to learn more about arguments.")
+        exit()
 
 
 main()
