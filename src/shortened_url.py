@@ -22,3 +22,13 @@ def get_url(shortened_url, xml_root):
     for child in xml_root:
         if child.get("short") == shortened_url:
             return child.find("url").text
+
+
+def check_new_url(user_input):
+    invlaid_short_words = ["-n", "new", "help", "-h", "--help", "r", "--rename", "-d", "--delete"]
+    for word in invlaid_short_words:
+        if word == user_input[2]:
+            return False
+
+    return True
+
