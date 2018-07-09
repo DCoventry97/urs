@@ -1,8 +1,12 @@
 #!/usr/bin/python3
 import sys
+import xml.etree.ElementTree as ET
 from check_input import check_input
 
-check_input(sys.argv)
+tree = ET.parse("urls.xml")
+root = tree.getroot()
+
+check_input(sys.argv, root)
 
 
 
