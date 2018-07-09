@@ -25,8 +25,8 @@ def get_url(shortened_url, xml_root):
 
 
 def check_new_url(user_input):
-    invlaid_short_words = ["-n", "new", "help", "-h", "--help", "r", "--rename", "-d", "--delete"]
-    for word in invlaid_short_words:
+    invalid_short_words = ["-n", "new", "help", "-h", "--help", "-r", "--rename", "-d", "--delete"]
+    for word in invalid_short_words:
         if word == user_input[2]:
             return False
 
