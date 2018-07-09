@@ -9,7 +9,9 @@ root = tree.getroot()
 decision = check_input(sys.argv, root)
 
 if decision == -1:
-    print("Invalid input, use ")
+    print("Invalid Arguments Given: use help to learn more about arguments.")
+
+
 
 
 
