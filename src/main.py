@@ -3,7 +3,7 @@ import sys
 import webbrowser
 import xml.etree.ElementTree as ET
 from check_input import check_input
-from shortened_url import get_url
+from shortened_url import get_url, check_new_url
 
 
 def main():
@@ -17,6 +17,9 @@ def main():
 
     elif decision == 0:
         webbrowser.open_new(get_url(sys.argv[1], root));
+
+    elif decision == 1:
+        check_new_url(sys.argv)
 
 
 main()
