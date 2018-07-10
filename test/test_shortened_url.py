@@ -1,5 +1,5 @@
 import unittest
-from shortened_url import is_shortened_url, get_url, check_new_url,add_url_to_xml
+from shortened_url import is_shortened_url, get_url, check_new_url,add_url_to_xml, alter_short_url
 import xml.etree.ElementTree as ET
 tree = ET.parse("test.xml")
 root = tree.getroot()
@@ -43,3 +43,15 @@ class TestShortenedUrl(unittest.TestCase):
             if child.get("short") == "testShort" and child.find("url").text == "www.test.long":
                 value_holder = (child.get("short"), child.find("url").text)
         self.assertEqual(("testShort", "www.test.long"), value_holder)
+
+    # Tests for renaming a short url
+    def test_alter_short_url_valid(self):
+        add_url_to_xml("oldShort", "www.rename.url", tree, "test.xml")
+        alter_short_url("oldShort", "newShort", tree, "test.xml")
+        new_short_buf = None
+        for child in root:
+            if child.get("short") == "newShort":
+                new_short_buf = child.get("short")
+        self.assertEqual(new_short_buf, "newShort")
+
+
