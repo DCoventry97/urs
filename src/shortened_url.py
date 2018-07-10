@@ -48,8 +48,30 @@ def check_new_url(user_input):
 
 
 def add_url_to_xml(short_url, long_url, tree, xml_file):
+    """
+    Adds a url and the shortened url to the specified xml file.
+    :param short_url: The shortened name the user wants to be associated with long_url.
+    :param long_url: The full url of the website being linked to.
+    :param tree: The xml tree the urls will be added to.
+    :param xml_file: The name of the file the changes are to be written to.
+    """
     new_short_url = ET.SubElement(tree.getroot(), "shortUrl", attrib={"short": short_url})
     new_long_url = ET.SubElement(new_short_url, "url")
     new_long_url.text = long_url
+    tree.write(xml_file)
+
+
+def alter_short_url(new_short, old_short, tree, xml_file):
+    """
+
+    :param old_short:
+    :param new_short:
+    :param tree:
+    :param xml_file:
+    """
+    for child in tree.getroot():
+        if child.attrib["short"] == old_short:
+            child.attrib["short"] = new_short
+
     tree.write(xml_file)
 

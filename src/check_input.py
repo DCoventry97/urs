@@ -29,3 +29,21 @@ def check_input(input_list, xml_root):
     except IndexError:
         print("Invalid Input: enter arguments to specify operation mode. Use help to find out more.")
         exit()
+
+
+def check_new_short_is_valid(new_short):
+    invalid_short_words = ["-n", "new", "help", "-h", "--help", "-r", "--rename", "-d", "--delete"]
+    for word in invalid_short_words:
+        if word == new_short:
+            return False
+    return True
+
+
+def check_new_short_is_unique(new_short, root):
+    for child in root:
+        if child.attrib["short"] == new_short:
+            return False
+    return True
+
+
+
