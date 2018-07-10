@@ -29,3 +29,37 @@ def check_input(input_list, xml_root):
     except IndexError:
         print("Invalid Input: enter arguments to specify operation mode. Use help to find out more.")
         exit()
+
+
+def check_new_short_is_valid(new_short):
+    """
+    Checks that the new_short is not a keyword of this program. The program exits if it does contain a keyword.
+    :param new_short: The new_short word.
+    :return: A boolean for if the short word contains a keyword.
+    """
+    invalid_short_words = ["-n", "new", "help", "-h", "--help", "-r", "--rename", "-d", "--delete"]
+    for word in invalid_short_words:
+        if word == new_short:
+            print("Error: The new short entered uses a key word of this program, use another word.")
+            exit()
+            return False
+    return True
+
+
+def check_new_short_is_unique(new_short, root):
+    """
+    Checks that a new short entered by the user does not already exist in the xml file. The program exits if new_short
+    is not unique in root.
+    :param new_short: The new short url.
+    :param root: The root of the xml file to be searched through.
+    :return: boolean for if new_short is unique.
+    """
+    for child in root:
+        if child.attrib["short"] == new_short:
+            print("The new short already exists, delete the old one or choose another short url.")
+            exit()
+            return False
+    return True
+
+
+
