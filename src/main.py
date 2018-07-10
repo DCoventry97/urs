@@ -22,9 +22,10 @@ def main():
         if check_new_url(sys.argv):
             short_url = sys.argv[2]
             long_url = sys.argv[3]
+            if not long_url.startswith("http://") and not long_url.startswith("https://"):
+                long_url = "http://" + long_url
             add_url_to_xml(short_url, long_url, tree, "../urls.xml")
 
 
-
-main()
-
+if __name__ == "__main__":
+    main()
