@@ -63,11 +63,11 @@ def add_url_to_xml(short_url, long_url, tree, xml_file):
 
 def alter_short_url(new_short, old_short, tree, xml_file):
     """
-
-    :param old_short:
-    :param new_short:
-    :param tree:
-    :param xml_file:
+    Alters the short url of a specifed short url.
+    :param old_short: The old url to be replaced.
+    :param new_short: The new url to replace the old short url.
+    :param tree: The xml tree that the short urlis to be stored in.
+    :param xml_file: xml_file: The name of the file the changes are to be written to.
     """
     for child in tree.getroot():
         if child.attrib["short"] == old_short:
