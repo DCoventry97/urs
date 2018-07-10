@@ -1,5 +1,6 @@
 import unittest
-from check_input import check_input
+from check_input import check_input, check_new_short_is_valid, check_new_short_is_unique
+from shortened_url import add_url_to_xml
 import xml.etree.ElementTree as ET
 tree = ET.parse("test.xml")
 root = tree.getroot()
@@ -50,3 +51,18 @@ class TestCheckInput(unittest.TestCase):
     def test_invalid_shortened_url(self):
         args_list = ["./main.py", "invalid_url"]
         self.assertEqual(check_input(args_list, root), -1)
+
+    # Tests if new short uses a keyword
+    def test_check_new_short_is_valid_valid(self):
+        self.assertTrue(check_new_short_is_valid("q"))
+
+    def test_check_new_short_is_valid_invalid(self):
+        self.assertFalse(check_new_short_is_valid("help"))
+
+    # Tests for checking if the new long is unique
+    def test_check_new_short_is_unique_valid(self):
+        self.assertTrue(check_new_short_is_unique("uniqueShort", root))
+
+    def test_check_new_short_is_unique_invalid(self):
+        add_url_to_xml("notUniqueShort", "www.notuniquelong.com", tree, "test.xml")
+        self.assertFalse(check_new_short_is_unique("notUniqueShort", root))

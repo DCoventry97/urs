@@ -5,4 +5,4 @@
     <shortUrl short="testShort">
         <url>www.test.long</url>
     </shortUrl>
-</shortenedUrls>
+<shortUrl short="notUniqueShort"><url>www.notuniquelong.com</url></shortUrl></shortenedUrls>
