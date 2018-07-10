@@ -1,4 +1,4 @@
-
+import xml.etree.ElementTree as ET
 
 def is_shortened_url(shortened_url, xml_root):
     """
@@ -25,6 +25,11 @@ def get_url(shortened_url, xml_root):
 
 
 def check_new_url(user_input):
+    """
+    Checks if the short url and url are valid.
+    :param user_input: The users command line arguments when calling the program, this should be sys.argv.
+    :return: A boolean for if the user input are valid.
+    """
     invalid_short_words = ["-n", "new", "help", "-h", "--help", "-r", "--rename", "-d", "--delete"]
     for word in invalid_short_words:
         try:
@@ -40,4 +45,11 @@ def check_new_url(user_input):
         exit()
 
     return True
+
+
+def add_url_to_xml(short_url, long_url, tree, xml_file):
+    new_short_url = ET.SubElement(tree.getroot(), "shortUrl", attrib={"short": short_url})
+    new_long_url = ET.SubElement(new_short_url, "url")
+    new_long_url.text = long_url
+    tree.write(xml_file)
 
