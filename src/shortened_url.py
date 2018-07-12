@@ -28,7 +28,7 @@ def get_url(shortened_url, xml_root):
 
 def check_new_url(user_input):
     """
-    Checks if the short url and url are valid.
+    Checks if the short word and url are valid.
     :param user_input: The users command line arguments when calling the program, this should be sys.argv.
     :return: A boolean for if the user input are valid.
     """
@@ -38,12 +38,12 @@ def check_new_url(user_input):
             if word == user_input[2]:
                 return False
         except IndexError:
-            print("Invalid Input: specify short url and original url when making a new shortened url, use help to "
+            print("Invalid Input: specify short word and original url when making a new shortened url, use help to "
                   "find out more.")
             exit()
 
     if len(user_input) != 4:
-        print("Invalid Input: specify a url to associate with a short url.")
+        print("Invalid Input: specify a url to associate with a short word.")
         exit()
 
     return True
@@ -65,10 +65,10 @@ def add_url_to_xml(short_url, long_url, tree, xml_file):
 
 def alter_short_url(new_short, old_short, tree, xml_file):
     """
-    Alters the short url of a specified short url.
+    Alters the short word of a specified short word.
     :param old_short: The old url to be replaced.
-    :param new_short: The new url to replace the old short url.
-    :param tree: The xml tree that the short urlis to be stored in.
+    :param new_short: The new url to replace the old short word.
+    :param tree: The xml tree that the short word is to be stored in.
     :param xml_file: xml_file: The name of the file the changes are to be written to.
     """
     for child in tree.getroot():
@@ -81,7 +81,7 @@ def alter_short_url(new_short, old_short, tree, xml_file):
 def delete_xml_element(short, tree, file_name):
     """
     Deletes an xml element from the xml file that contains all of the url information.
-    :param short: The short url that is to be removed, alongside its long url that is associated with it.
+    :param short: The short word that is to be removed, alongside its long url that is associated with it.
     :param tree: The xml tree that contains short.
     :param file_name: The xml file for the changes to be saved to.
     """
@@ -95,11 +95,11 @@ def delete_xml_element(short, tree, file_name):
 def delete_url(short, tree, file_name):
     """
     Facade for delete_xml_element, checks if the xml tree contains short and prints a message if not.
-    :param short: The short url that is to be removed, alongside its long url that is associated with it.
+    :param short: The short word that is to be removed, alongside its long url that is associated with it.
     :param tree: The xml tree that contains short.
     :param file_name: The xml file for the changes to be saved to
     """
     if is_shortened_url(short, tree.getroot()):
         delete_xml_element(short, tree, file_name)
     else:
-        print("Input Error: " + short + " is not a current short url.")
+        print("Input Error: " + short + " is not a current short word.")
