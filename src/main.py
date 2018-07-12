@@ -4,7 +4,7 @@ import webbrowser
 import xml.etree.ElementTree as ET
 from check_input import check_input, check_new_short_is_valid, check_new_short_is_unique
 from shortened_url import get_url, check_new_url, add_url_to_xml, alter_short_url, is_shortened_url, delete_url
-
+from help import get_help_message
 
 def main():
     tree = ET.parse("../urls.xml")
@@ -28,6 +28,10 @@ def main():
             if not long_url.startswith("http://") and not long_url.startswith("https://"):
                 long_url = "http://" + long_url
             add_url_to_xml(short_url, long_url, tree, "../urls.xml")
+
+    # If the user needs help
+    elif decision == 2:
+        get_help_message()
 
     # If the user decided to re-name a short url
     elif decision == 3:
