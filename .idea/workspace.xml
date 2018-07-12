@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d67a849e-7da2-412a-b488-8f2f24a6320c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/help.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shortened_url.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/shortened_url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/check_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/check_input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/check_input_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/check_input_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,131 +14,107 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_r_flag.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_r_flag Coverage Results" MODIFIED="1531065199245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestShortenedUrl_test_check_new_url_invalid_n.coverage" NAME="Unittests for test_shortened_url.TestShortenedUrl.test_check_new_url_invalid_n Coverage Results" MODIFIED="1531175926418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestCheckInput.coverage" NAME="Unittests for test_shortened_url.TestCheckInput Coverage Results" MODIFIED="1531149465789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestShortenedUrl_test_get_url.coverage" NAME="Unittests for test_shortened_url.TestShortenedUrl.test_get_url Coverage Results" MODIFIED="1531175972727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_check_new_short_is_unique_invalid.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_check_new_short_is_unique_invalid Coverage Results" MODIFIED="1531238015191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestShortenedUrl_test_check_new_url_valid.coverage" NAME="Unittests for test_shortened_url.TestShortenedUrl.test_check_new_url_valid Coverage Results" MODIFIED="1531175928610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_delete_flag.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_delete_flag Coverage Results" MODIFIED="1531065486293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_d_flag.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_d_flag Coverage Results" MODIFIED="1531065385703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_v_flag.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_v_flag Coverage Results" MODIFIED="1531422118010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestShortenedUrl_test_is_shortened_url.coverage" NAME="Unittests for test_shortened_url.TestShortenedUrl.test_is_shortened_url Coverage Results" MODIFIED="1531150219200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestShortenedUrl_test_check_new_url_invalid_r.coverage" NAME="Unittests for test_shortened_url.TestShortenedUrl.test_check_new_url_invalid_r Coverage Results" MODIFIED="1531175924478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestShortenedUrl_test_alter_short_url_valid.coverage" NAME="Unittests for test_shortened_url.TestShortenedUrl.test_alter_short_url_valid Coverage Results" MODIFIED="1531233916575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestShortenedUrl.coverage" NAME="Unittests for test_shortened_url.TestShortenedUrl Coverage Results" MODIFIED="1531177156284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_check_new_short_is_valid_valid.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_check_new_short_is_valid_valid Coverage Results" MODIFIED="1531235096234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_invalid_shortened_url.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_invalid_shortened_url Coverage Results" MODIFIED="1531422063547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestShortenedUrl_test_add_url_to_xml.coverage" NAME="Unittests for test_shortened_url.TestShortenedUrl.test_add_url_to_xml Coverage Results" MODIFIED="1531181743517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_rename_flag.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_rename_flag Coverage Results" MODIFIED="1531065254165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput.coverage" NAME="Unittests for check_input_test.TestCheckInput Coverage Results" MODIFIED="1531156694150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_check_new_short_is_valid_invalid.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_check_new_short_is_valid_invalid Coverage Results" MODIFIED="1531235151994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestShortenedUrl_test_delete_xml_element.coverage" NAME="Unittests for test_shortened_url.TestShortenedUrl.test_delete_xml_element Coverage Results" MODIFIED="1531413857259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_r_flag.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_r_flag Coverage Results" MODIFIED="1531065199245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestShortenedUrl_test_check_new_url_invalid_n.coverage" NAME="Unittests for test_shortened_url.TestShortenedUrl.test_check_new_url_invalid_n Coverage Results" MODIFIED="1531175926418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestShortenedUrl_test_check_new_url_invalid_help.coverage" NAME="Unittests for test_shortened_url.TestShortenedUrl.test_check_new_url_invalid_help Coverage Results" MODIFIED="1531175859924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestCheckInput.coverage" NAME="Unittests for test_shortened_url.TestCheckInput Coverage Results" MODIFIED="1531149465789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_help_flag.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_help_flag Coverage Results" MODIFIED="1531064477339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestShortenedUrl_test_get_url.coverage" NAME="Unittests for test_shortened_url.TestShortenedUrl.test_get_url Coverage Results" MODIFIED="1531175972727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_check_new_short_is_unique_invalid.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_check_new_short_is_unique_invalid Coverage Results" MODIFIED="1531238015191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_test_shortened_url_TestShortenedUrl_test_check_new_url_valid.coverage" NAME="Unittests for test_shortened_url.TestShortenedUrl.test_check_new_url_valid Coverage Results" MODIFIED="1531175928610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_n_flag.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_n_flag Coverage Results" MODIFIED="1531063978192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_delete_flag.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_delete_flag Coverage Results" MODIFIED="1531065486293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_valid_shortened_url.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_valid_shortened_url Coverage Results" MODIFIED="1531067436443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_check_new_short_is_unique_valid.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_check_new_short_is_unique_valid Coverage Results" MODIFIED="1531236032698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/url_cli$Unittests_for_check_input_test_TestCheckInput_test_d_flag.coverage" NAME="Unittests for check_input_test.TestCheckInput.test_d_flag Coverage Results" MODIFIED="1531065385703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="shortened_url.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/shortened_url.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="247">
-                  <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="help.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/help.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-                  <folding>
-                    <element signature="e#19#29#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="urls.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/urls.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="check_input_test.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/check_input_test.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="787">
-                  <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
-                  <folding>
-                    <element signature="e#0#15#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_shortened_url.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/test_shortened_url.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="847">
-                  <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-                  <folding>
-                    <element signature="e#0#15#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/test.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="check_input.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/check_input.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="840">
-                  <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="check_input.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/check_input.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="813">
-                  <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="shortened_url.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shortened_url.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+              <folding>
+                <element signature="e#19#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/urls.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check_input_test.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/check_input_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_shortened_url.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_shortened_url.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="885">
+              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check_input.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/check_input.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -155,13 +130,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/urls.xml" />
-        <option value="$PROJECT_DIR$/test/check_input_test.py" />
-        <option value="$PROJECT_DIR$/src/check_input.py" />
         <option value="$PROJECT_DIR$/test/test.xml" />
         <option value="$PROJECT_DIR$/test/test_shortened_url.py" />
         <option value="$PROJECT_DIR$/src/shortened_url.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
-        <option value="$PROJECT_DIR$/src/help.py" />
+        <option value="$PROJECT_DIR$/src/check_input.py" />
+        <option value="$PROJECT_DIR$/test/check_input_test.py" />
       </list>
     </option>
   </component>
@@ -230,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_shortened_url.TestShortenedUrl.test_delete_xml_element">
+  <component name="RunManager" selected="Python tests.Unittests for check_input_test.TestCheckInput.test_v_flag">
     <configuration name="Unittests for check_input_test.TestCheckInput.test_check_new_short_is_unique_invalid" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="url-cli" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -259,7 +233,7 @@
       <option name="_new_target" value="&quot;check_input_test.TestCheckInput.test_check_new_short_is_unique_valid&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for check_input_test.TestCheckInput.test_check_new_short_is_valid_invalid" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for check_input_test.TestCheckInput.test_invalid_shortened_url" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="url-cli" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -270,10 +244,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;check_input_test.TestCheckInput.test_check_new_short_is_valid_invalid&quot;" />
+      <option name="_new_target" value="&quot;check_input_test.TestCheckInput.test_invalid_shortened_url&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for check_input_test.TestCheckInput.test_check_new_short_is_valid_valid" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for check_input_test.TestCheckInput.test_v_flag" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="url-cli" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -284,7 +258,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;check_input_test.TestCheckInput.test_check_new_short_is_valid_valid&quot;" />
+      <option name="_new_target" value="&quot;check_input_test.TestCheckInput.test_v_flag&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="Unittests for test_shortened_url.TestShortenedUrl.test_delete_xml_element" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -318,19 +292,19 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.Unittests in test" />
-      <item itemvalue="Python tests.Unittests for check_input_test.TestCheckInput.test_check_new_short_is_valid_valid" />
-      <item itemvalue="Python tests.Unittests for check_input_test.TestCheckInput.test_check_new_short_is_valid_invalid" />
       <item itemvalue="Python tests.Unittests for check_input_test.TestCheckInput.test_check_new_short_is_unique_valid" />
       <item itemvalue="Python tests.Unittests for check_input_test.TestCheckInput.test_check_new_short_is_unique_invalid" />
       <item itemvalue="Python tests.Unittests for test_shortened_url.TestShortenedUrl.test_delete_xml_element" />
+      <item itemvalue="Python tests.Unittests for check_input_test.TestCheckInput.test_invalid_shortened_url" />
+      <item itemvalue="Python tests.Unittests for check_input_test.TestCheckInput.test_v_flag" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for check_input_test.TestCheckInput.test_v_flag" />
+        <item itemvalue="Python tests.Unittests for check_input_test.TestCheckInput.test_invalid_shortened_url" />
         <item itemvalue="Python tests.Unittests for test_shortened_url.TestShortenedUrl.test_delete_xml_element" />
         <item itemvalue="Python tests.Unittests for check_input_test.TestCheckInput.test_check_new_short_is_unique_invalid" />
         <item itemvalue="Python tests.Unittests for check_input_test.TestCheckInput.test_check_new_short_is_unique_valid" />
-        <item itemvalue="Python tests.Unittests for check_input_test.TestCheckInput.test_check_new_short_is_valid_invalid" />
-        <item itemvalue="Python tests.Unittests for check_input_test.TestCheckInput.test_check_new_short_is_valid_valid" />
       </list>
     </recent_temporary>
   </component>
@@ -348,15 +322,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_shortened_url_TestShortenedUrl_test_delete_xml_element - 2018.07.12 at 17h 37m 51s.xml">
-      <configuration name="Unittests for test_shortened_url.TestShortenedUrl.test_delete_xml_element" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_shortened_url_TestShortenedUrl_test_delete_xml_element - 2018.07.12 at 17h 38m 03s.xml">
-      <configuration name="Unittests for test_shortened_url.TestShortenedUrl.test_delete_xml_element" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_shortened_url_TestShortenedUrl_test_delete_xml_element - 2018.07.12 at 17h 38m 25s.xml">
-      <configuration name="Unittests for test_shortened_url.TestShortenedUrl.test_delete_xml_element" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_test_shortened_url_TestShortenedUrl_test_delete_xml_element - 2018.07.12 at 17h 39m 14s.xml">
       <configuration name="Unittests for test_shortened_url.TestShortenedUrl.test_delete_xml_element" configurationId="tests" />
     </history-entry>
@@ -378,6 +343,15 @@
     <history-entry file="Unittests_for_test_shortened_url_TestShortenedUrl_test_delete_xml_element - 2018.07.12 at 17h 44m 17s.xml">
       <configuration name="Unittests for test_shortened_url.TestShortenedUrl.test_delete_xml_element" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_check_input_test_TestCheckInput_test_invalid_shortened_url - 2018.07.12 at 20h 01m 03s.xml">
+      <configuration name="Unittests for check_input_test.TestCheckInput.test_invalid_shortened_url" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_check_input_test_TestCheckInput_test_v_flag - 2018.07.12 at 20h 01m 31s.xml">
+      <configuration name="Unittests for check_input_test.TestCheckInput.test_v_flag" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_check_input_test_TestCheckInput_test_v_flag - 2018.07.12 at 20h 01m 58s.xml">
+      <configuration name="Unittests for check_input_test.TestCheckInput.test_v_flag" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1439" y="28" width="2562" height="1413" extended-state="6" />
@@ -386,10 +360,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13632813" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -397,14 +371,28 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13632813" />
+      <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" />
       <window_info anchor="right" id="Coverage" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,17 +403,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/main.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/urls.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/check_input_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -787,51 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/urls.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/check_input_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="787">
-          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_shortened_url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="847">
-          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/check_input.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shortened_url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -845,10 +792,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/help.py">
+    <entry file="file://$PROJECT_DIR$/test/test_shortened_url.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        <state relative-caret-position="885">
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shortened_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/check_input.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/check_input_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

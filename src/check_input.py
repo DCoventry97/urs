@@ -24,6 +24,9 @@ def check_input(input_list, xml_root):
 
         elif input_list[1] == "-d" or input_list[1] == "--delete":
             return 4
+
+        elif input_list[1] == "-v" or input_list[1] == "--view-all-urls":
+            return 5
         else:
             return -1
     except IndexError:
