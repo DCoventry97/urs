@@ -52,6 +52,14 @@ class TestCheckInput(unittest.TestCase):
         args_list = ["./main.py", "invalid_url"]
         self.assertEqual(check_input(args_list, root), -1)
 
+    def test_v_flag(self):
+        args_list = ["./main.py", "-v"]
+        self.assertEqual(check_input(args_list, root), 5)
+
+    def test_view_all_urls_flag(self):
+        args_list = ["./main.py", "--view-all-urls"]
+        self.assertEqual(check_input(args_list, root), 5)
+
     # Tests if new short uses a keyword
     def test_check_new_short_is_valid_valid(self):
         self.assertTrue(check_new_short_is_valid("q"))

@@ -44,7 +44,7 @@ class TestShortenedUrl(unittest.TestCase):
                 value_holder = (child.get("short"), child.find("url").text)
         self.assertEqual(("testShort", "www.test.long"), value_holder)
 
-    # Tests for renaming a short url
+    # Tests for renaming a short word
     def test_alter_short_url_valid(self):
         add_url_to_xml("oldShort", "www.rename.url", tree, "test.xml")
         alter_short_url("oldShort", "newShort", tree, "test.xml")

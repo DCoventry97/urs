@@ -24,6 +24,9 @@ def check_input(input_list, xml_root):
 
         elif input_list[1] == "-d" or input_list[1] == "--delete":
             return 4
+
+        elif input_list[1] == "-v" or input_list[1] == "--view-all-urls":
+            return 5
         else:
             return -1
     except IndexError:
@@ -50,13 +53,13 @@ def check_new_short_is_unique(new_short, root):
     """
     Checks that a new short entered by the user does not already exist in the xml file. The program exits if new_short
     is not unique in root.
-    :param new_short: The new short url.
+    :param new_short: The new short word.
     :param root: The root of the xml file to be searched through.
     :return: boolean for if new_short is unique.
     """
     for child in root:
         if child.attrib["short"] == new_short:
-            print("The new short already exists, delete the old one or choose another short url.")
+            print("The new short already exists, delete the old one or choose another short word.")
             exit()
             return False
     return True
