@@ -52,6 +52,11 @@ def main():
         except IndexError:
             print("Invalid Input: specify the short url to be deleted.")
 
+    # If the user wants to see a list of all the short words and urls
+    elif decision == 5:
+        for child in root:
+            print(child.get("short") + " : " + child.find("url").text)
+
 
 if __name__ == "__main__":
     main()
