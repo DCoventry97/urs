@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 
+
 def is_shortened_url(shortened_url, xml_root):
     """
     Checks that the requested shortened url exists.
