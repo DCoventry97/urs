@@ -1,5 +1,5 @@
 import unittest
-from shortened_url import is_shortened_url, get_url, check_new_url,add_url_to_xml, alter_short_url
+from shortened_url import is_shortened_url, get_url, check_new_url,add_url_to_xml, alter_short_url, delete_xml_element
 import xml.etree.ElementTree as ET
 tree = ET.parse("test.xml")
 root = tree.getroot()
@@ -54,4 +54,13 @@ class TestShortenedUrl(unittest.TestCase):
                 new_short_buf = child.get("short")
         self.assertEqual(new_short_buf, "newShort")
 
+    # Tests for deleting a node from the xml file
+    def test_delete_xml_element(self):
+        add_url_to_xml("testDelete", "www.test.delete", tree, "test.xml")
+        delete_xml_element("testDelete", tree, "test.xml")
+        buf = None
+        for child in root:
+            if child.get("short") == "testDelete":
+                buf = child.get("short")
+        self.assertEqual(None, buf)
 
