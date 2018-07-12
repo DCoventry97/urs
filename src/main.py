@@ -3,7 +3,7 @@ import sys
 import webbrowser
 import xml.etree.ElementTree as ET
 from check_input import check_input, check_new_short_is_valid, check_new_short_is_unique
-from shortened_url import get_url, check_new_url, add_url_to_xml, alter_short_url, is_shortened_url
+from shortened_url import get_url, check_new_url, add_url_to_xml, alter_short_url, is_shortened_url, delete_url
 
 
 def main():
@@ -15,7 +15,7 @@ def main():
     # If the user has input an invalid input
     if decision == -1:
         print("Invalid Arguments Given: use help to learn more.")
-        exit()
+
 
     # If the user has decided to open a short url
     elif decision == 0:
@@ -41,8 +41,13 @@ def main():
 
         except IndexError:
             print("Invalid Input: specify the new short url and the old short url to be replaced.")
-            exit()
 
+
+    elif decision == 4:
+        try:
+            delete_url(sys.argv[2], tree, "../urls.xml")
+        except IndexError:
+            print("Invalid Input: specify the short url to be deleted.")
 
 if __name__ == "__main__":
     main()

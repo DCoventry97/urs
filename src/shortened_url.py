@@ -76,3 +76,17 @@ def alter_short_url(new_short, old_short, tree, xml_file):
 
     tree.write(xml_file)
 
+
+def delete_xml_element(short, tree, file_name):
+    root = tree.getroot()
+    for child in root:
+        if child.get("short") == short:
+            root.remove(child)
+    tree.write(file_name)
+
+
+def delete_url(short, tree, file_name):
+    if is_shortened_url(short, tree.getroot()):
+        delete_xml_element(short, tree, file_name)
+    else:
+        print("Input Error: " + short + " is not a current short url.")
