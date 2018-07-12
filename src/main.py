@@ -16,7 +16,6 @@ def main():
     if decision == -1:
         print("Invalid Arguments Given: use help to learn more.")
 
-
     # If the user has decided to open a short url
     elif decision == 0:
         webbrowser.open_new(get_url(sys.argv[1], root));
@@ -42,12 +41,13 @@ def main():
         except IndexError:
             print("Invalid Input: specify the new short url and the old short url to be replaced.")
 
-
+    # If the user want to delete a short url
     elif decision == 4:
         try:
             delete_url(sys.argv[2], tree, "../urls.xml")
         except IndexError:
             print("Invalid Input: specify the short url to be deleted.")
+
 
 if __name__ == "__main__":
     main()

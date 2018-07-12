@@ -78,6 +78,12 @@ def alter_short_url(new_short, old_short, tree, xml_file):
 
 
 def delete_xml_element(short, tree, file_name):
+    """
+    Deletes an xml element from the xml file that contains all of the url information.
+    :param short: The short url that is to be removed, alongside its long url that is associated with it.
+    :param tree: The xml tree that contains short.
+    :param file_name: The xml file for the changes to be saved to.
+    """
     root = tree.getroot()
     for child in root:
         if child.get("short") == short:
@@ -86,6 +92,12 @@ def delete_xml_element(short, tree, file_name):
 
 
 def delete_url(short, tree, file_name):
+    """
+    Facade for delete_xml_element, checks if the xml tree contains short and prints a message if not.
+    :param short: The short url that is to be removed, alongside its long url that is associated with it.
+    :param tree: The xml tree that contains short.
+    :param file_name: The xml file for the changes to be saved to
+    """
     if is_shortened_url(short, tree.getroot()):
         delete_xml_element(short, tree, file_name)
     else:
