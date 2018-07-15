@@ -2,13 +2,18 @@
 import sys
 import webbrowser
 import xml.etree.ElementTree as ET
+from os.path import isfile
 from check_input import check_input, check_new_short_is_valid, check_new_short_is_unique
 from shortened_url import get_url, check_new_url, add_url_to_xml, alter_short_url, is_shortened_url, delete_url
 from help import get_help_message
+from make_xml import make_new_xml_file
 
 
 def main():
-    tree = ET.parse("../urls.xml")
+    if not isfile("urls.xml"):
+        make_new_xml_file("urls.xml")
+
+    tree = ET.parse("urls.xml")
     root = tree.getroot()
 
     decision = check_input(sys.argv, root)
@@ -28,7 +33,7 @@ def main():
             long_url = sys.argv[3]
             if not long_url.startswith("http://") and not long_url.startswith("https://"):
                 long_url = "http://" + long_url
-            add_url_to_xml(short_url, long_url, tree, "../urls.xml")
+            add_url_to_xml(short_url, long_url, tree, "urls.xml")
 
     # If the user needs help
     elif decision == 2:
@@ -39,17 +44,17 @@ def main():
         try:
             if check_new_short_is_valid(sys.argv[2]) and check_new_short_is_unique(sys.argv[2], root) and \
                     is_shortened_url(sys.argv[3], root):
-                alter_short_url(sys.argv[2], sys.argv[3], tree, "../urls.xml")
+                alter_short_url(sys.argv[2], sys.argv[3], tree, "urls.xml")
             else:
                 print("Invalid Input: " + sys.argv[3] + " is not a current short word.")
 
         except IndexError:
-            print("Invalid Input: specify the new short wword and the old short word to be replaced.")
+            print("Invalid Input: specify the new short word and the old short word to be replaced.")
 
     # If the user want to delete a short word
     elif decision == 4:
         try:
-            delete_url(sys.argv[2], tree, "../urls.xml")
+            delete_url(sys.argv[2], tree, "urls.xml")
         except IndexError:
             print("Invalid Input: specify the short word to be deleted.")
 
