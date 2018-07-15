@@ -2,12 +2,17 @@
 import sys
 import webbrowser
 import xml.etree.ElementTree as ET
+from os.path import isfile
 from check_input import check_input, check_new_short_is_valid, check_new_short_is_unique
 from shortened_url import get_url, check_new_url, add_url_to_xml, alter_short_url, is_shortened_url, delete_url
 from help import get_help_message
+from make_xml import make_new_xml_file
 
 
 def main():
+    if not isfile("urls.xml"):
+        make_new_xml_file("urls.xml")
+
     tree = ET.parse("urls.xml")
     root = tree.getroot()
 
