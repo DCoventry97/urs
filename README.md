@@ -8,14 +8,14 @@ website or type the url.
 
 # Getting Started
 Follow these instructions on a Linux system to install the program.
-### Prerequisites
+#### Prerequisites
 Python 3 is required, if you do not know if it is installed on your system then type in the terminal: <br>
 ```
 $ python3 --version
 ``` 
 If this does not display the version number installed, download it from <a>https://www.python.org</a>.
 
-### Installing
+#### Installing
 Clone this repository to the directory that you want with:<br> 
 ```
 $ git clone https://github.com/DCoventry97/urs.git
@@ -56,7 +56,7 @@ For example:
 $ urs --rename urs_g urs_github
 ```
 
-### Deleting a url and its short word
+#### Deleting a url and its short word
 To delete a url and it's associated short word:
 ```
 $ urs --delete <short word>
