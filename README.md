@@ -23,9 +23,8 @@ $ git clone https://github.com/DCoventry97/urs.git
 Then create a symbolic link from `/usr/local/bin` to `/path/to/directory/containing/this/project`:<br>
 ```
 $ sudo ln -s /path/to/directory/containing/this/project/url-cli/src/main.py /usr/local/bin/urs
-
 ```
-Replace /path/to/directory/containing/project with the real path to the directory where the urs project is stored. 
+Replace `/path/to/directory/containing/project` with the real path to the directory where the urs project is stored. 
 
 #How To Use urs
 ###Adding a new url
